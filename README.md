@@ -57,7 +57,7 @@ A batch registration tool for VOICEVOX Engine's user dictionary. Define pronunci
 
 - Required environment: Nix (with flakes), VOICEVOX Engine running on localhost
 - Enter development shell: `nix develop`
-- Run directly: `python3 register.py --dry-run`
+- Run directly: `python3 main.py --dry-run`
 
 ## Architecture
 
@@ -66,7 +66,7 @@ A batch registration tool for VOICEVOX Engine's user dictionary. Define pronunci
   ```mermaid
   graph TB
       YAML[dict.yaml]
-      SCRIPT[register.py]
+      SCRIPT[main.py]
       API[VOICEVOX Engine API<br/>localhost:50021]
       DICT[(User Dictionary)]
       YAML --> SCRIPT

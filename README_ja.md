@@ -57,7 +57,7 @@ VOICEVOX Engine のユーザー辞書を一括登録するツールです。YAML
 
 - 必要な環境: Nix（flakes 対応）、VOICEVOX Engine が localhost で起動していること
 - 開発シェルに入る: `nix develop`
-- 直接実行: `python3 register.py --dry-run`
+- 直接実行: `python3 main.py --dry-run`
 
 ## アーキテクチャ
 
@@ -66,7 +66,7 @@ VOICEVOX Engine のユーザー辞書を一括登録するツールです。YAML
   ```mermaid
   graph TB
       YAML[dict.yaml]
-      SCRIPT[register.py]
+      SCRIPT[main.py]
       API[VOICEVOX Engine API<br/>localhost:50021]
       DICT[(User Dictionary)]
       YAML --> SCRIPT
