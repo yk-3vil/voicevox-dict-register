@@ -484,6 +484,9 @@ words:
   # =====================
   # 拡張子・ファイル形式
   # =====================
+  - surface: 拡張子
+    pronunciation: カクチョウシ
+    accent_type: 1
   - surface: .py
     pronunciation: パイ
     accent_type: 1
@@ -544,3 +547,55 @@ words:
   - surface: .zig
     pronunciation: ジグ
     accent_type: 1
+  - surface: .png
+    pronunciation: ピング
+    accent_type: 1
+  - surface: .jpg
+    pronunciation: ジェイペグ
+    accent_type: 3
+  - surface: .jpeg
+    pronunciation: ジェイペグ
+    accent_type: 3
+  - surface: .gif
+    pronunciation: ジフ
+    accent_type: 1
+  - surface: .svg
+    pronunciation: エスブイジー
+    accent_type: 5
+  - surface: .webp
+    pronunciation: ウェッブピー
+    accent_type: 4
+  - surface: .heic
+    pronunciation: ヘイク
+    accent_type: 1
+  - surface: .bmp
+    pronunciation: ビーエムピー
+    accent_type: 5
+  - surface: .ico
+    pronunciation: アイコ
+    accent_type: 1
+  - surface: .tiff
+    pronunciation: ティフ
+    accent_type: 1
+  - surface: .avif
+    pronunciation: エイヴィフ
+    accent_type: 3
+
+  # =====================
+  # プロジェクトファイル
+  # =====================
+  - surface: README
+    pronunciation: リードミー
+    accent_type: 3
+  - surface: CHANGELOG
+    pronunciation: チェンジログ
+    accent_type: 4
+  - surface: LICENSE
+    pronunciation: ライセンス
+    accent_type: 1
+  - surface: Makefile
+    pronunciation: メイクファイル
+    accent_type: 4
+  - surface: Dockerfile
+    pronunciation: ドッカーファイル
+    accent_type: 5
