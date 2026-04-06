@@ -1,0 +1,546 @@
+# VOICEVOX ユーザー辞書定義ファイル
+#
+# 書式:
+#   - surface: 登録する単語（表層形）
+#     pronunciation: カタカナ読み
+#     accent_type: アクセント核の位置（0=平板, 1以上=その位置に核）
+#     word_type: 品詞（省略時: PROPER_NOUN）
+#       PROPER_NOUN / COMMON_NOUN / VERB / ADJECTIVE / SUFFIX
+#     priority: 優先度 0-10（省略時: 5、高いほど優先）
+
+words:
+  # =====================
+  # エディタ・シェル
+  # =====================
+  - surface: vim
+    pronunciation: ヴィム
+    accent_type: 1
+  - surface: vimrc
+    pronunciation: ヴィムアールシー
+    accent_type: 3
+  - surface: neovim
+    pronunciation: ネオヴィム
+    accent_type: 3
+  - surface: emacs
+    pronunciation: イーマックス
+    accent_type: 3
+  - surface: vscode
+    pronunciation: ブイエスコード
+    accent_type: 5
+  - surface: tmux
+    pronunciation: ティーマックス
+    accent_type: 4
+  - surface: zsh
+    pronunciation: ゼットシェル
+    accent_type: 4
+  - surface: bash
+    pronunciation: バッシュ
+    accent_type: 1
+  - surface: fish
+    pronunciation: フィッシュ
+    accent_type: 1
+
+  # =====================
+  # コマンド・ツール
+  # =====================
+  - surface: sudo
+    pronunciation: スードゥー
+    accent_type: 1
+  - surface: grep
+    pronunciation: グレップ
+    accent_type: 1
+  - surface: chmod
+    pronunciation: チェンジモード
+    accent_type: 4
+  - surface: chown
+    pronunciation: チェンジオーナー
+    accent_type: 5
+  - surface: nginx
+    pronunciation: エンジンエックス
+    accent_type: 5
+  - surface: wget
+    pronunciation: ダブリューゲット
+    accent_type: 5
+  - surface: curl
+    pronunciation: カール
+    accent_type: 2
+  - surface: xargs
+    pronunciation: エックスアーグス
+    accent_type: 5
+  - surface: awk
+    pronunciation: オーク
+    accent_type: 1
+  - surface: sed
+    pronunciation: セド
+    accent_type: 1
+  - surface: cron
+    pronunciation: クーロン
+    accent_type: 1
+  - surface: kubectl
+    pronunciation: キューブコントロール
+    accent_type: 5
+  - surface: npm
+    pronunciation: エヌピーエム
+    accent_type: 5
+  - surface: yarn
+    pronunciation: ヤーン
+    accent_type: 1
+  - surface: pip
+    pronunciation: ピップ
+    accent_type: 1
+  - surface: apt
+    pronunciation: アプト
+    accent_type: 1
+  - surface: yum
+    pronunciation: ヤム
+    accent_type: 1
+  - surface: homebrew
+    pronunciation: ホームブルー
+    accent_type: 4
+  - surface: nix
+    pronunciation: ニックス
+    accent_type: 1
+
+  # =====================
+  # コンテナ・インフラ
+  # =====================
+  - surface: docker
+    pronunciation: ドッカー
+    accent_type: 1
+  - surface: k8s
+    pronunciation: クーバネティス
+    accent_type: 4
+  - surface: kubernetes
+    pronunciation: クーバネティス
+    accent_type: 4
+  - surface: podman
+    pronunciation: ポッドマン
+    accent_type: 1
+  - surface: terraform
+    pronunciation: テラフォーム
+    accent_type: 4
+  - surface: ansible
+    pronunciation: アンシブル
+    accent_type: 1
+  - surface: jenkins
+    pronunciation: ジェンキンス
+    accent_type: 1
+  - surface: prometheus
+    pronunciation: プロメテウス
+    accent_type: 4
+  - surface: grafana
+    pronunciation: グラファナ
+    accent_type: 1
+  - surface: datadog
+    pronunciation: データドッグ
+    accent_type: 4
+  - surface: istio
+    pronunciation: イスティオ
+    accent_type: 1
+  - surface: envoy
+    pronunciation: エンボイ
+    accent_type: 1
+  - surface: helm
+    pronunciation: ヘルム
+    accent_type: 1
+
+  # =====================
+  # 言語・ランタイム
+  # =====================
+  - surface: golang
+    pronunciation: ゴーラング
+    accent_type: 3
+  - surface: rust
+    pronunciation: ラスト
+    accent_type: 1
+  - surface: python
+    pronunciation: パイソン
+    accent_type: 1
+  - surface: typescript
+    pronunciation: タイプスクリプト
+    accent_type: 5
+  - surface: javascript
+    pronunciation: ジャバスクリプト
+    accent_type: 5
+  - surface: kotlin
+    pronunciation: コトリン
+    accent_type: 1
+  - surface: swift
+    pronunciation: スウィフト
+    accent_type: 1
+  - surface: deno
+    pronunciation: ディーノ
+    accent_type: 1
+  - surface: bun
+    pronunciation: バン
+    accent_type: 1
+  - surface: wasm
+    pronunciation: ワズム
+    accent_type: 1
+
+  # =====================
+  # フレームワーク・ライブラリ
+  # =====================
+  - surface: react
+    pronunciation: リアクト
+    accent_type: 3
+  - surface: nextjs
+    pronunciation: ネクストジェーエス
+    accent_type: 5
+  - surface: nuxt
+    pronunciation: ナクスト
+    accent_type: 1
+  - surface: svelte
+    pronunciation: スベルト
+    accent_type: 1
+  - surface: tailwind
+    pronunciation: テイルウィンド
+    accent_type: 5
+  - surface: webpack
+    pronunciation: ウェブパック
+    accent_type: 4
+  - surface: vite
+    pronunciation: ヴィート
+    accent_type: 2
+  - surface: eslint
+    pronunciation: イーエスリント
+    accent_type: 5
+  - surface: prettier
+    pronunciation: プリティア
+    accent_type: 1
+  - surface: django
+    pronunciation: ジャンゴ
+    accent_type: 1
+  - surface: fastapi
+    pronunciation: ファストエーピーアイ
+    accent_type: 7
+  - surface: flask
+    pronunciation: フラスク
+    accent_type: 1
+  - surface: laravel
+    pronunciation: ララベル
+    accent_type: 1
+  - surface: prisma
+    pronunciation: プリズマ
+    accent_type: 1
+
+  # =====================
+  # データベース
+  # =====================
+  - surface: redis
+    pronunciation: レディス
+    accent_type: 1
+  - surface: mysql
+    pronunciation: マイエスキューエル
+    accent_type: 5
+  - surface: postgresql
+    pronunciation: ポストグレスキューエル
+    accent_type: 7
+  - surface: postgres
+    pronunciation: ポストグレス
+    accent_type: 4
+  - surface: mongodb
+    pronunciation: モンゴディービー
+    accent_type: 5
+  - surface: sqlite
+    pronunciation: エスキューライト
+    accent_type: 5
+  - surface: supabase
+    pronunciation: スーパベース
+    accent_type: 4
+  - surface: graphql
+    pronunciation: グラフキューエル
+    accent_type: 5
+  - surface: nosql
+    pronunciation: ノーエスキューエル
+    accent_type: 5
+
+  # =====================
+  # クラウド・サービス
+  # =====================
+  - surface: aws
+    pronunciation: エーダブリューエス
+    accent_type: 7
+  - surface: gcp
+    pronunciation: ジーシーピー
+    accent_type: 5
+  - surface: azure
+    pronunciation: アジュール
+    accent_type: 3
+  - surface: vercel
+    pronunciation: バーセル
+    accent_type: 1
+  - surface: netlify
+    pronunciation: ネットリファイ
+    accent_type: 5
+  - surface: heroku
+    pronunciation: ヘロク
+    accent_type: 1
+  - surface: github
+    pronunciation: ギットハブ
+    accent_type: 4
+  - surface: gitlab
+    pronunciation: ギットラブ
+    accent_type: 4
+
+  # =====================
+  # プロトコル・略語
+  # =====================
+  - surface: ssh
+    pronunciation: エスエスエイチ
+    accent_type: 5
+  - surface: ssl
+    pronunciation: エスエスエル
+    accent_type: 5
+  - surface: tls
+    pronunciation: ティーエルエス
+    accent_type: 5
+  - surface: tcp
+    pronunciation: ティーシーピー
+    accent_type: 5
+  - surface: udp
+    pronunciation: ユーディーピー
+    accent_type: 5
+  - surface: dns
+    pronunciation: ディーエヌエス
+    accent_type: 5
+  - surface: api
+    pronunciation: エーピーアイ
+    accent_type: 5
+  - surface: cli
+    pronunciation: シーエルアイ
+    accent_type: 5
+  - surface: gui
+    pronunciation: ジーユーアイ
+    accent_type: 5
+  - surface: ide
+    pronunciation: アイディーイー
+    accent_type: 5
+  - surface: cicd
+    pronunciation: シーアイシーディー
+    accent_type: 7
+  - surface: oauth
+    pronunciation: オーオース
+    accent_type: 4
+  - surface: jwt
+    pronunciation: ジェーダブリューティー
+    accent_type: 7
+  - surface: grpc
+    pronunciation: ジーアールピーシー
+    accent_type: 7
+  - surface: yaml
+    pronunciation: ヤムル
+    accent_type: 1
+  - surface: json
+    pronunciation: ジェイソン
+    accent_type: 1
+  - surface: toml
+    pronunciation: トムル
+    accent_type: 1
+  - surface: regex
+    pronunciation: レジェックス
+    accent_type: 1
+  - surface: crud
+    pronunciation: クラッド
+    accent_type: 1
+  - surface: orm
+    pronunciation: オーアールエム
+    accent_type: 5
+  - surface: csrf
+    pronunciation: シーエスアールエフ
+    accent_type: 7
+  - surface: xss
+    pronunciation: エックスエスエス
+    accent_type: 5
+
+  # =====================
+  # OS・ディストリビューション
+  # =====================
+  - surface: linux
+    pronunciation: リナックス
+    accent_type: 1
+  - surface: ubuntu
+    pronunciation: ウブントゥ
+    accent_type: 1
+  - surface: debian
+    pronunciation: デビアン
+    accent_type: 1
+  - surface: archlinux
+    pronunciation: アーチリナックス
+    accent_type: 5
+  - surface: nixos
+    pronunciation: ニックスオーエス
+    accent_type: 5
+  - surface: wsl
+    pronunciation: ダブリューエスエル
+    accent_type: 7
+  - surface: localhost
+    pronunciation: ローカルホスト
+    accent_type: 5
+  - surface: daemon
+    pronunciation: デーモン
+    accent_type: 1
+
+  # =====================
+  # AI・機械学習
+  # =====================
+  - surface: LLM
+    pronunciation: エルエルエム
+    accent_type: 5
+  - surface: GPT
+    pronunciation: ジーピーティー
+    accent_type: 5
+  - surface: ChatGPT
+    pronunciation: チャットジーピーティー
+    accent_type: 7
+  - surface: OpenAI
+    pronunciation: オープンエーアイ
+    accent_type: 5
+  - surface: Anthropic
+    pronunciation: アンソロピック
+    accent_type: 4
+  - surface: Claude
+    pronunciation: クロード
+    accent_type: 3
+  - surface: Gemini
+    pronunciation: ジェミニ
+    accent_type: 1
+  - surface: Copilot
+    pronunciation: コパイロット
+    accent_type: 3
+  - surface: Ollama
+    pronunciation: オラマ
+    accent_type: 1
+  - surface: llama
+    pronunciation: ラマ
+    accent_type: 1
+  - surface: Mixtral
+    pronunciation: ミクストラル
+    accent_type: 4
+  - surface: Whisper
+    pronunciation: ウィスパー
+    accent_type: 1
+  - surface: VOICEVOX
+    pronunciation: ボイスボックス
+    accent_type: 4
+  - surface: Midjourney
+    pronunciation: ミッドジャーニー
+    accent_type: 5
+  - surface: DALL-E
+    pronunciation: ダリ
+    accent_type: 1
+  - surface: Stable Diffusion
+    pronunciation: ステーブルディフュージョン
+    accent_type: 7
+  - surface: RAG
+    pronunciation: ラグ
+    accent_type: 1
+  - surface: LoRA
+    pronunciation: ローラ
+    accent_type: 1
+  - surface: RLHF
+    pronunciation: アールエルエイチエフ
+    accent_type: 7
+  - surface: fine-tuning
+    pronunciation: ファインチューニング
+    accent_type: 5
+  - surface: embedding
+    pronunciation: エンベディング
+    accent_type: 4
+  - surface: transformer
+    pronunciation: トランスフォーマー
+    accent_type: 5
+  - surface: diffusion
+    pronunciation: ディフュージョン
+    accent_type: 4
+  - surface: hallucination
+    pronunciation: ハルシネーション
+    accent_type: 5
+  - surface: AGI
+    pronunciation: エージーアイ
+    accent_type: 5
+  - surface: PyTorch
+    pronunciation: パイトーチ
+    accent_type: 4
+  - surface: TensorFlow
+    pronunciation: テンソルフロー
+    accent_type: 5
+  - surface: LangChain
+    pronunciation: ラングチェイン
+    accent_type: 5
+  - surface: Hugging Face
+    pronunciation: ハギングフェイス
+    accent_type: 5
+  - surface: ONNX
+    pronunciation: オニキス
+    accent_type: 1
+  - surface: CUDA
+    pronunciation: クーダ
+    accent_type: 1
+  - surface: MLOps
+    pronunciation: エムエルオプス
+    accent_type: 5
+
+  # =====================
+  # 拡張子・ファイル形式
+  # =====================
+  - surface: .py
+    pronunciation: パイ
+    accent_type: 1
+  - surface: .ts
+    pronunciation: ティーエス
+    accent_type: 3
+  - surface: .tsx
+    pronunciation: ティーエスエックス
+    accent_type: 5
+  - surface: .js
+    pronunciation: ジェーエス
+    accent_type: 3
+  - surface: .jsx
+    pronunciation: ジェーエスエックス
+    accent_type: 5
+  - surface: .rs
+    pronunciation: アールエス
+    accent_type: 3
+  - surface: .go
+    pronunciation: ゴー
+    accent_type: 1
+  - surface: .rb
+    pronunciation: アールビー
+    accent_type: 3
+  - surface: .sh
+    pronunciation: シェル
+    accent_type: 1
+  - surface: .yml
+    pronunciation: ヤムル
+    accent_type: 1
+  - surface: .env
+    pronunciation: エンブ
+    accent_type: 1
+  - surface: .md
+    pronunciation: マークダウン
+    accent_type: 4
+  - surface: .vue
+    pronunciation: ビュー
+    accent_type: 1
+  - surface: .dockerfile
+    pronunciation: ドッカーファイル
+    accent_type: 5
+  - surface: .gitignore
+    pronunciation: ギットイグノア
+    accent_type: 5
+  - surface: .editorconfig
+    pronunciation: エディターコンフィグ
+    accent_type: 7
+  - surface: .nvim
+    pronunciation: ネオヴィム
+    accent_type: 3
+  - surface: .lua
+    pronunciation: ルア
+    accent_type: 1
+  - surface: .nix
+    pronunciation: ニックス
+    accent_type: 1
+  - surface: .zig
+    pronunciation: ジグ
+    accent_type: 1
