@@ -102,7 +102,8 @@ def cleanup_duplicates(base_url: str) -> int:
 def main() -> None:
     parser = argparse.ArgumentParser(description="VOICEVOX ユーザー辞書一括登録")
     parser.add_argument(
-        "-f", "--file",
+        "-f",
+        "--file",
         type=Path,
         default=DEFAULT_DICT_FILE,
         help=f"辞書YAMLファイル (default: {DEFAULT_DICT_FILE.name})",
